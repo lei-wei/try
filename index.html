@@ -1,7 +1,7 @@
 <!--
  * @Author: lei
  * @Date: 2021-01-24 21:37:53
- * @LastEditTime: 2021-02-09 19:57:15
+ * @LastEditTime: 2021-03-15 22:08:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \py_crawl\Untitled-1.html
@@ -13,6 +13,23 @@
     <!--  metadata goes here   -->
     <meta charset="UTF-8">
     <title>Title of the document</title>
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,6 +52,11 @@
     <p>这是一个<a href="http://www.baidu.com">百度</a>连接</p>
     <img height=100px src="./wallhaven-8o77d1_1920x1200.png">
     <img height=100px src="./刑天断手常羊山.jpg">
+
+    <div class="video-container">
+        <iframe src="//player.bilibili.com/player.html?aid=30553825&bvid=BV1As411c7tM&cid=53324281&page=1"
+            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    </div>
 </body>
 
 </html>
